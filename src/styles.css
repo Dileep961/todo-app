@@ -1,0 +1,148 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #85cbf9;
+  }
+  
+  /* App container */
+  .app-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: bisque;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Authentication button */
+  /* .auth-btn {
+    display: block;
+    width: 100px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .auth-btn:hover {
+    background: #0056b3;
+  } */
+  
+  /* Task input */
+  .task-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input,
+  .task-input select {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .task-input button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .task-input button:hover {
+    background: #218838;
+  }
+  
+  /* Task list */
+  .task-list ul {
+    list-style: none;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-left: 4px solid;
+    border-radius: 4px;
+    box-shadow: 0 1வ
+  }
+  /* Priority colors */
+  .priority-high {
+    border-left-color: #dc3545;
+  }
+  
+  .priority-medium {
+    border-left-color: #ffc107;
+  }
+  
+  .priority-low {
+    border-left-color: #28a745;
+  }
+  
+  /* Delete button */
+  .delete-btn {
+    padding: 5px 10px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  
+  /* Weather and error messages */
+  .weather-info {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive design (mobile-first) */
+  @media (min-width: 600px) {
+    .task-input {
+      flex-wrap: nowrap;
+    }
+  
+    .task-input input,
+    .task-input select {
+      min-width: 0;
+    }
+  }
