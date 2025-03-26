@@ -31,7 +31,7 @@ const TaskInput = () => {
         placeholder="Enter a task"
         value={task}
         onChange={(e) => setTask(e.target.value)}
-        onKeyPress={(e) => e.key === 'Enter' && handleAddTask()}
+        onKeyup={(e) => e.key === 'Enter' && handleAddTask()}
       />
       <select value={priority} onChange={(e) => setPriority(e.target.value)}>
         <option value="High">High</option>
